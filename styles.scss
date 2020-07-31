@@ -9,6 +9,7 @@ body,html { margin: 0; }
 body {
     display: flex;
     min-height: 100vh;
+    min-height: -webkit-fill-available; // stupid mobile Safari https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
     flex-direction: column;
     justify-content: space-between;
     max-width: 1300px;
