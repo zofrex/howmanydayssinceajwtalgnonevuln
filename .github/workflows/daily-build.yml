@@ -1,0 +1,15 @@
+name: Daily Build
+on:
+  schedule:
+    - cron: '0 7 * * *'
+
+jobs:
+  build:
+    name: Trigger build & deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        uses: CamiloGarciaLaRotta/watermelon-http-client@v1.4
+        with:
+          url: https://api.netlify.com/build_hooks/${{ secrets.build_hook_id }}
+          method: post
