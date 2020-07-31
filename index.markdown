@@ -5,4 +5,8 @@
 layout: default
 ---
 
-hello
+{% assign latest_vuln = site.data.vulns | sort: "date" | last %}
+
+<h1>It has been {{ latest_vuln.date | since }} since the last alg=none JWT vulnerability</h1>
+
+<p>{{ latest_vuln.description }}</p>
