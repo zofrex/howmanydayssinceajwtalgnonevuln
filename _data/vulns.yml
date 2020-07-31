@@ -1,2 +1,2 @@
 - date: 2020-07-30
-  description: The DP3T Coronavirus tracing project had a vulnerability in its backend accepting unsigned JWT tokens with signature algorithm=none. <a href="https://mrsuicideparrot.github.io/security/2020/07/30/CVE-2020-15957.html">write-up here.</a>
+  description: The DP3T Coronavirus tracing project had a vulnerability in its backend accepting unsigned JWT tokens with signature algorithm=none. <a href="https://mrsuicideparrot.github.io/security/2020/07/30/CVE-2020-15957.html">Write-up here.</a>
