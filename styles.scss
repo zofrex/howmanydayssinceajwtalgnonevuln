@@ -2,4 +2,44 @@
 
 ---
 
-* { color: blue; }
+// https://coolors.co/011936-465362-fefadc-ce4760-69a2b0 (ignore cadet blue)
+
+body,html { margin: 0; }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FEFADC;
+    color: #465362;
+}
+
+h1 {
+    color: #0D1B2A;
+    font-size: 6em;
+}
+
+p {
+    font-size: 2em;
+    color: #465362;
+}
+
+a {
+    color: #CE4760;
+}
+
+a:visited {
+    color: #878E99;
+}
+
+h1 .since {
+    text-decoration: underline;
+}
+
+footer {
+    padding-bottom: 1em;
+}
