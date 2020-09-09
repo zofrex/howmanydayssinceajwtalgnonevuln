@@ -11,22 +11,23 @@
       gtag('config', 'UA-12922701-4');
     </script>
     <meta charset="utf-8">
-    <title><%= h("#{if current_page.data.title then "#{current_page.data.title} || " end}How Many Days Has It Been Since a JWT alg=none Vulnerability?") %></title>
-    <%= stylesheet_link_tag "styles" %>
+    <title>{% if current_page.data.title %}{{ current_page.data.title | escape }} || {% endif %}How Many Days Has It Been Since a JWT alg=none Vulnerability?</title>
+    {% stylesheet_link_tag styles %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@zofrex" />
-    <meta property="og:title" content="<%= h("#{if current_page.data.title then "#{current_page.data.title} || " end}How Many Days Has It Been Since a JWT alg=none Vulnerability?") %>" />
-    <% if content_for?(:description) %>
-      <meta property="og:description" content="<%= h(yield_content :description) %>" />
-    <% end %>
+    <meta property="og:title" content="{% if current_page.data.title %}{{ current_page.data.title | escape }} || {% endif %} How Many Days Has It Been Since a JWT alg=none Vulnerability?" />
+    {% capture description %}{% yield_content description %}{% endcapture %}
+    {% if description != "" %}
+      <meta property="og:description" content="{{ description | escape }}" />
+    {% endif %}
   </head>
   <body>
     <main>
-      <%= yield %>
+      {{ yield }}
     </main>
     <footer>
       Out of date? <a href="https://twitter.com/zofrex">@ me on Twitter</a><br/>
-      &copy; <%= Time.now.year %>
+      &copy; {{ "now" | date: "%Y" }}
     </footer>
   </body>
 </html>

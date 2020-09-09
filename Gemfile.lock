@@ -35,6 +35,7 @@ GEM
       concurrent-ruby (~> 1.0)
     kramdown (2.3.0)
       rexml
+    liquid (4.0.3)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -111,6 +112,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  liquid
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   tzinfo (~> 1.2)

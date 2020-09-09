@@ -44,3 +44,8 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+require 'lib/liquid_layout_support'
+require 'lib/content_for'
+require 'lib/stylesheet_link_tag'
+require 'lib/since_filter'

@@ -1,7 +1,0 @@
-<% latest_vuln = data.vulns.sort_by {|v| v.date}.last %>
-
-<% content_for :description do -%>It has been <%= days_since_in_words(latest_vuln.date) %> since the last "alg=none" JWT vulnerability.<%- end %>
-
-<h1>It has been <span class="since"><%= days_since_in_words(latest_vuln.date) %></span> since the last alg=none JWT vulnerability.</h1>
-
-<p><%= latest_vuln.description %></p>
