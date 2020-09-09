@@ -1,6 +1,5 @@
-_site
+.bundle
+.cache
+.DS_Store
 .sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-/.bundle
+build/

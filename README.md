@@ -18,5 +18,5 @@ bundle install
 ### Running
 
 ```
-jekyll serve
+middleman serve
 ```
