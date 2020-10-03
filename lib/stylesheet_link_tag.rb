@@ -1,3 +1,17 @@
+# Make stylesheet_link_tag helper available to Liquid templates
+# Depends on LiquidMMExtension
+
+# Implements stylesheet_link_tag. Usage:
+#
+#     {% stylesheet_link_tag stylesheet_name %}
+#
+# Example:
+#
+#     {% stylesheet_link_tag article %}
+#
+# Produces a link tag like:
+#
+#     <link href="/stylesheets/article.css" rel="stylesheet" />
 class StylesheetLinkTag < Liquid::Tag
   SYNTAX_HELP = "Syntax Error in tag 'stylesheet_link_tag' - Valid syntax: {% stylesheet_link_tag stylesheet_name %}".freeze
 
