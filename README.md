@@ -22,7 +22,7 @@ It's really easy to add new entries to that list, and it'd be a big help, so if 
 
 ## Setting up local development
 
-Please note it is not a pre-requisite for contributing incidents to this repo to get the website building locally. These instructions are here for my benefit as much as anyone's.
+Please note it is not a pre-requisite for contributing incidents to this repo to get the website building locally. When you make a PR a preview of the site with your changes will automatically be generated for you. These instructions are here for my benefit as much as anyone's.
 
 ### Requirements
 
