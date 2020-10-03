@@ -2,3 +2,5 @@
   description: The DP3T Coronavirus tracing project had a vulnerability in its backend accepting unsigned JWT tokens with signature algorithm=none. <a href="https://mrsuicideparrot.github.io/security/2020/07/30/CVE-2020-15957.html">Write-up here.</a>
 - date: 2020-08-24
   description: The "Marvel's Avengers" videogame <a href="https://krystalgamer.github.io/avengers-emulator/">accepts alg=none tokens in API login responses</a><br>(and completely ignores signatures as well, for good measure).
+- date: 2020-10-03
+  description: This is just a test
