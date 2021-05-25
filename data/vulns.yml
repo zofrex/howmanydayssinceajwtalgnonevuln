@@ -4,3 +4,5 @@
   description: The "Marvel's Avengers" videogame <a href="https://krystalgamer.github.io/avengers-emulator/">accepts alg=none tokens in API login responses</a><br>(and completely ignores signatures as well, for good measure).
 - date: 2020-10-20
   description: The UK NHS COVID-19 contact tracing app for Android was accepting <br>alg=none tokens in venue check-in QR codes. <a href="https://www.zofrex.com/blog/2020/10/20/alg-none-jwt-nhs-contact-tracing-app/">Write-up here.</a>
+- date: 2021-05-25
+  description: Apache Pulsar <a href="https://www.openwall.com/lists/oss-security/2021/05/25/4">accepted alg=none tokens</a> if it was configured to authenticate clients via JWT.
