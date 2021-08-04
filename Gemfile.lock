@@ -99,11 +99,8 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2020.1)
-      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -115,9 +112,6 @@ DEPENDENCIES
   liquid
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
-  tzinfo (~> 1.2)
-  tzinfo-data
-  wdm (~> 0.1.1)
 
 BUNDLED WITH
    2.1.4
