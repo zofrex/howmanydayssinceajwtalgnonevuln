@@ -6,3 +6,5 @@
   description: The UK NHS COVID-19 contact tracing app for Android was accepting <br>alg=none tokens in venue check-in QR codes. <a href="https://www.zofrex.com/blog/2020/10/20/alg-none-jwt-nhs-contact-tracing-app/">Write-up here.</a>
 - date: 2021-05-25
   description: Apache Pulsar <a href="https://www.openwall.com/lists/oss-security/2021/05/25/4">accepted alg=none tokens</a> if it was configured to authenticate clients via JWT.
+- date: 2021-07-26
+  description: The NIMBLE supply chain & logistics platform was <a href="https://github.com/nimble-platform/common/security/advisories/GHSA-fjq8-896w-pv28">accepting alg=none tokens</a> for user authentication and authorisation.
