@@ -1,10 +1,49 @@
+- date: 2020-04-20
+  title: Auth0 alg=nonE
+  description: TODO
+  url: https://insomniasec.com/blog/auth0-jwt-validation-bypass
+  added_retroactively: yes
+
 - date: 2020-07-30
+  title: DP3T contact tracing project
   description: The DP3T Coronavirus tracing project had a vulnerability in its backend accepting unsigned JWT tokens with signature algorithm=none. <a href="https://mrsuicideparrot.github.io/security/2020/07/30/CVE-2020-15957.html">Write-up here.</a>
+  library: jjwt
+
 - date: 2020-08-24
+  title: Marvel's Avengers
   description: The "Marvel's Avengers" videogame <a href="https://krystalgamer.github.io/avengers-emulator/">accepts alg=none tokens in API login responses</a><br>(and completely ignores signatures as well, for good measure).
+
 - date: 2020-10-20
+  title: UK contact tracing app
   description: The UK NHS COVID-19 contact tracing app for Android was accepting <br>alg=none tokens in venue check-in QR codes. <a href="https://www.zofrex.com/blog/2020/10/20/alg-none-jwt-nhs-contact-tracing-app/">Write-up here.</a>
+  library: jjwt
+
+- date: 2021-04-17
+  description: TODO
+  url: https://github.com/ManyDesigns/Portofino/security/advisories/GHSA-6g3c-2mh5-7q6x
+  added_retroactively: yes
+  project: Portofino
+  library: jjwt
+
+- date: 2021-04-17
+  description: TODO
+  url: https://github.com/grassrootza/grassroot-platform/security/advisories/GHSA-f65w-6xw8-6734
+  added_retroactively: yes
+  project: grassroot-platform
+  library: jjwt
+
+- date: 2021-05-21
+  description: TODO
+  url: https://github.com/fxbin/bubble-fireworks/security/advisories/GHSA-hj36-84cp-29pr
+  added_retroactively: yes
+  project: bubble-fireworks
+  library: jjwt
+
 - date: 2021-05-25
+  title: Apache Pulsar
   description: Apache Pulsar <a href="https://www.openwall.com/lists/oss-security/2021/05/25/4">accepted alg=none tokens</a> if it was configured to authenticate clients via JWT.
+
 - date: 2021-07-26
+  title: NIMBLE logistics platform
   description: The NIMBLE supply chain & logistics platform was <a href="https://github.com/nimble-platform/common/security/advisories/GHSA-fjq8-896w-pv28">accepting alg=none tokens</a> for user authentication and authorisation.
+  library: jjwt
