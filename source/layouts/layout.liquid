@@ -21,6 +21,10 @@
     {% end_if_content_for %}
   </head>
   <body>
+    <header>
+      <div class="top"><div class="inner">The more important statistic is that it has been {{ data.misc.russian_invasion_of_ukraine | since }} since Russia invaded Ukraine.</div></div>
+      <div class="bottom"><div class="inner">Ukraine needs our help and support. If you can, please <a href="https://www.forbes.com/sites/gabbyshacknai/2022/02/24/10-ways-to-help-the-people-of-ukraine-right-now/">donate</a>.</div></div>
+    </header>
     <main>
       {{ yield }}
     </main>

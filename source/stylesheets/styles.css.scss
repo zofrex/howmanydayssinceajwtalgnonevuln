@@ -3,15 +3,16 @@
 body,html { margin: 0; }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center;
     background-color: #FEFADC;
     color: #465362;
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 // select only Safari - https://stackoverflow.com/a/25975282
@@ -19,6 +20,10 @@ _::-webkit-full-page-media, _:future, :root body {
     // stupid mobile Safari https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
     // seems to break desktop chrome
     min-height: -webkit-fill-available;
+}
+
+main {
+    max-width: 1300px;
 }
 
 h1 {
@@ -49,4 +54,35 @@ h1 .since {
 
 footer {
     padding-bottom: 1em;
+}
+
+header {
+    width: 100%;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    div {
+        padding: 0.2em;
+    }
+
+    .top {
+        background-color: #0057b7;
+        color: #ffffff;
+    }
+
+    .bottom {
+        background-color: #ffd700;
+        color: #000000;
+
+        a {
+            color: #000000;
+        }
+
+        display: grid;
+    }
+
+    .inner {
+        align-self: center;
+    }
 }
