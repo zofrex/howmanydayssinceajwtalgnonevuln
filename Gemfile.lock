@@ -115,6 +115,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  haml (~> 5.0)
   liquid
   middleman (~> 4.2)
   middleman-autoprefixer
