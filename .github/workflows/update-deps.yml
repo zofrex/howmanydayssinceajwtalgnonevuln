@@ -17,6 +17,7 @@ jobs:
         run: |
           echo 'BUNDLER_OUTPUT<<UPDATE_EOF' >> $GITHUB_ENV
           bundle update | tee -a $GITHUB_ENV
+          echo >> $GITHUB_ENV
           echo 'UPDATE_EOF' >> $GITHUB_ENV
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
