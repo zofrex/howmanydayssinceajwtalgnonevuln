@@ -52,3 +52,9 @@
   title: Conecte SUS
   url: https://twitter.com/conradoplg/status/1487503344830668805
   description: Conecte SUS, the official app of the Brazilian Ministry of Health, <a href="https://twitter.com/conradoplg/status/1487503344830668805">does not validate JWT signatures when validating vaccine certificates offline</a>. It doesn't accept alg=none, but it might as well.
+
+- date: 2022-12-21
+  title: jsonwebtoken library
+  url: https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6
+  description: |
+    The jsonwebtoken library <a href="https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6">would accept alg: none tokens as valid</a> before version 9.0.0.
