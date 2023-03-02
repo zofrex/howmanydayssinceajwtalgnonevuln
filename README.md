@@ -1,6 +1,6 @@
 ## Help! The counter needs resetting!
 
-You can either [ping me on Twitter](https://twitter.com/zofrex) or, if you want, make a Pull Request yourself to add the new incident to [the list](data/vulns.yml).
+You can [ping me on Mastodon](https://hachyderm.io/@zofrex) (or [Twitter](https://twitter.com/zofrex)) to update it, or, if you want, make a Pull Request yourself to add the new incident to [the list](data/vulns.yml).
 
 ## Adding incidents
 
@@ -10,7 +10,7 @@ Incident criteria:
 
 * Sourced: There must be some third-party documentation that the vuln existed.
 * Dated: For consistency, we are using the disclosure date as the vuln date, as this is the only date we can definitively narrow down for all issues.
-* Vulnerability: It _must_ be an alg=none vuln.
+* Vulnerability: It must be an alg=none vuln or morally equivalent (e.g. not checking signatures at all).
 
 ## Contributing
 
