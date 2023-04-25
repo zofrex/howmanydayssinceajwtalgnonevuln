@@ -119,7 +119,7 @@ DEPENDENCIES
   middleman-autoprefixer
 
 RUBY VERSION
-   ruby 3.0.3p157
+   ruby 3.0.6p216
 
 BUNDLED WITH
    2.3.4
