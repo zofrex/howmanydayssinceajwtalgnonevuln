@@ -120,7 +120,7 @@ DEPENDENCIES
   middleman-autoprefixer
 
 RUBY VERSION
-   ruby 3.0.6p216
+   ruby 3.1.4p223
 
 BUNDLED WITH
    2.3.4
