@@ -58,3 +58,8 @@
   url: https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6
   description: |
     The jsonwebtoken library <a href="https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6">would accept alg: none tokens as valid</a> before version 9.0.0.
+
+- date: 2023-09-25
+  title: SharePoint 2019
+  url: https://starlabs.sg/blog/2023/09-sharepoint-pre-auth-rce-chain/
+  description: An unauthenticated attacker could <a href="https://starlabs.sg/blog/2023/09-sharepoint-pre-auth-rce-chain/">impersonate any user in SharePoint 2019</a> by using an alg:none JWT for OAuth authentication.
