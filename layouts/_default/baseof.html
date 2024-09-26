@@ -11,22 +11,21 @@
       gtag('config', 'UA-12922701-4');
     </script>
     <meta charset="utf-8">
-    <title>{% if current_page.data.title %}{{ current_page.data.title | escape }} || {% endif %}How Many Days Has It Been Since a JWT alg:none Vulnerability?</title>
-    {% stylesheet_link_tag styles %}
+    <title>How Many Days Has It Been Since a JWT alg:none Vulnerability?</title>
+    {{- $style := resources.Get "styles.scss" | css.Sass }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@zofrex" />
-    <meta property="og:title" content="{% if current_page.data.title %}{{ current_page.data.title | escape }} || {% endif %} How Many Days Has It Been Since a JWT alg=none Vulnerability?" />
-    {% if_content_for description %}
-    <meta property="og:description" content="{% yield_content description escape %}" />
-    {% end_if_content_for %}
+    <meta property="og:title" content="How Many Days Has It Been Since a JWT alg:none Vulnerability?" />
+    <meta property="og:description" content="{{ block "description" . }}{{ end }}" />
   </head>
   <body>
     <header>
-      <div class="top"><div class="inner">The more important statistic is that it has been {{ data.misc.russian_invasion_of_ukraine | since }} since Russia invaded Ukraine.</div></div>
+      <div class="top"><div class="inner">The more important statistic is that it has been {{ partial "since.html" .Site.Data.misc.russian_invasion_of_ukraine }} since Russia invaded Ukraine.</div></div>
       <div class="bottom"><div class="inner">Ukraine needs our help and support. If you can, please <a href="https://www.forbes.com/sites/gabbyshacknai/2022/02/24/10-ways-to-help-the-people-of-ukraine-right-now/">donate</a>.</div></div>
     </header>
     <main>
-      {{ yield }}
+      {{ block "main" . }}{{ end }}
     </main>
     <footer>
       <p class="attribution">made by <a href="https://www.zofrex.com">zofrex</a></p>

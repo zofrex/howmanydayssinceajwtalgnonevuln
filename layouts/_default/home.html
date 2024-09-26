@@ -1,0 +1,13 @@
+{{- define "description" -}}
+{{- $latest := partial "latest.html" . -}}
+It has been {{ partial "since.html" $latest.date }} since the last alg:none JWT vulnerability.
+{{- end -}}
+
+{{ define "main" }}
+{{ $latest := partial "latest.html" . }}
+
+    <h1>It has been <span class="since">{{ partial "since.html" $latest.date }}</span> since the last alg:none JWT vulnerability.</h1>
+
+    <p>{{ $latest.description | safe.HTML }}</p>
+
+{{ end }}
