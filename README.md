@@ -26,17 +26,10 @@ Please note it is not a pre-requisite for contributing incidents to this repo to
 
 ### Requirements
 
-* Ruby
-* Bundler
-
-Install the dependencies with:
-
-```
-bundle install
-```
+* [Hugo](https://gohugo.io)
 
 ### Running
 
 ```
-bundle exec middleman serve
+hugo serve
 ```

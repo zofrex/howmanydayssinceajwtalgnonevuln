@@ -1,0 +1,3 @@
+{{ $sorted := sort .Site.Data.vulns "date" "desc" }}
+{{ $latest := index $sorted 0 }}
+{{ return $latest }}

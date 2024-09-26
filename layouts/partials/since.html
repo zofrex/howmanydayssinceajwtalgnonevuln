@@ -1,0 +1,8 @@
+{{- $date := . | time -}}
+{{- $duration := now.Sub $date -}}
+{{- $days := div $duration.Hours 24 | math.Floor -}}
+{{- if eq $days 1.0 -}}
+  1 day
+{{- else -}}
+  {{ $days }} days
+{{- end -}}
