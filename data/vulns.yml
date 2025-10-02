@@ -68,3 +68,8 @@
   title: Azure ID / Entra ID
   url: https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/
   description: An attacker could <a href="https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/">impersonate any user in any Entra ID tenant</a> due to the (deliberate!) use of alg:none tokens in the Azure AD Graph API.
+
+- date: 2025-10-01
+  title: Kazaar
+  url: https://github.com/Henkel-CyberVM/CVEs/tree/main/CVE-2025-59685
+  description: The Kazaar application <a href="https://github.com/Henkel-CyberVM/CVEs/tree/main/CVE-2025-59685">accepted alg:none tokens</a> for authentication to all endpoints.
