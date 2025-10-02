@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12922701-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-12922701-4');
+    </script>
+    <meta charset="utf-8">
+    <title>HOW MANY DAYS HAS IT BEEN SINCE A JWT ALG:NONE VULNERABILITY?</title>
+    {{- $style := resources.Get "styles.scss" | css.Sass }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@zofrex" />
+    <meta property="og:title" content="HOW MANY DAYS HAS IT BEEN SINCE A JWT ALG:NONE VULNERABILITY?" />
+    <meta property="og:description" content="{{ block "description" . }}{{ end }}" />
+  </head>
+  <body>
+    <header>
+      <div class="top"><div class="inner">THE MORE IMPORTANT STATISTIC IS THAT IT HAS BEEN {{ partial "since.html" .Site.Data.misc.russian_invasion_of_ukraine | strings.ToUpper }} SINCE RUSSIA INVADED UKRAINE.</div></div>
+      <div class="bottom"><div class="inner">UKRAINE NEEDS OUR HELP AND SUPPORT. IF YOU CAN, PLEASE <a href="https://www.forbes.com/sites/gabbyshacknai/2022/02/24/10-ways-to-help-the-people-of-ukraine-right-now/">DONATE</a>.</div></div>
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      <p class="attribution">MADE BY <a href="https://www.zofrex.com">ZOFREX</a></p>
+      <p>OUT OF DATE? <a href="https://bsky.app/profile/zofrex.bsky.social">LET ME KNOW!</a></p>
+    </footer>
+  </body>
+</html>
