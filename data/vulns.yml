@@ -78,4 +78,4 @@
   title: HarbourJwt
   url: https://pentesterlab.com/blog/cve-2026-23993-harbourjwt-unknown-alg-jwt-bypass
   description: |
-    The <a href="https://pentesterlab.com/blog/cve-2026-23993-harbourjwt-unknown-alg-jwt-bypass">HarbourJWT library would accept tokens without a signature</a> with "alg": "none". Or "alg": "NONE". And "alg": "". Or "alg": "bestie-plz".Or "alg": "let me iiiinnnnnnnn".
+    The <a href="https://pentesterlab.com/blog/cve-2026-23993-harbourjwt-unknown-alg-jwt-bypass">HarbourJWT library would accept tokens without a signature</a> with "alg": "none". Or "alg": "NONE". And "alg": "". Or "alg": "bestie-plz" .Or "alg": "let me iiiinnnnnnnn".
