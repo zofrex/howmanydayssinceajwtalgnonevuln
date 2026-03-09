@@ -79,3 +79,8 @@
   url: https://pentesterlab.com/blog/cve-2026-23993-harbourjwt-unknown-alg-jwt-bypass
   description: |
     The <a href="https://pentesterlab.com/blog/cve-2026-23993-harbourjwt-unknown-alg-jwt-bypass">HarbourJWT library would accept tokens without a signature</a> with "alg": "none". Or "alg": "NONE". And "alg": "". Or "alg": "bestie-plz" .Or "alg": "let me iiiinnnnnnnn".
+
+- date: 2026-03-03
+  title: pac4j
+  url: https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key
+  description: The pac4j authentication framework would accept unsigned session tokens for admins & superusers, as long as they were <a href="https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key">encrypted with the <i>public</i> RSA key</a>.
