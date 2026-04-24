@@ -84,3 +84,8 @@
   title: pac4j
   url: https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key
   description: The pac4j authentication framework would accept unsigned session tokens for admins & superusers, as long as they were <a href="https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key">encrypted with the <i>public</i> RSA key</a>.
+
+- date: 2026-04-24
+  title: AWS Ops Wheel
+  url: https://aws.amazon.com/security/security-bulletins/rss/2026-018-aws/
+  description: Et tu, AWS? TIL that AWS has their own version of <a href="https://wheeldecide.com">Wheel Decide</a>, Ops Wheel. Like Wheel Decide, Ops Wheel lets you spin a wheel to pick where to go for lunch. Unlike Wheel Decide, Ops Wheel — via not checking JWT signatures — <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-018-aws/">allowed attackers to get administrator access to the application, delete <i>all application data across tenants</i>, and <b>manage Cognito user accounts?!</b></a> Christ. I think I might retire and go live on a boat.
