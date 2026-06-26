@@ -1,7 +1,7 @@
 name: Daily Build
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,24 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tell healthchecks.io the action has started
-        uses: CamiloGarciaLaRotta/watermelon-http-client@v1.4
-        with:
-          url: https://hc-ping.com/${{ secrets.healthcheck_id }}/start
+        run: curl --max-time 10 --retry 5 -f -sS -L https://hc-ping.com/${{ secrets.healthcheck_id }}/start
 
       - name: Trigger Netlify build hook
-        uses: CamiloGarciaLaRotta/watermelon-http-client@v1.4
-        with:
-          url: https://api.netlify.com/build_hooks/${{ secrets.build_hook_id }}
-          method: post
+        run: curl -X POST -f -sS -L https://api.netlify.com/build_hooks/${{ secrets.build_hook_id }}
         if: ${{ always() }} # still run the build if the healthcheck curl fails!
 
       - name: Tell healthchecks.io if the action succeeded
-        uses: CamiloGarciaLaRotta/watermelon-http-client@v1.4
-        with:
-          url: https://hc-ping.com/${{ secrets.healthcheck_id }}
+        run: curl --max-time 10 --retry 5 -f -sS -L https://hc-ping.com/${{ secrets.healthcheck_id }}
 
       - name: Tell healthchecks.io if the action failed
-        uses: CamiloGarciaLaRotta/watermelon-http-client@v1.4
-        with:
-          url: https://hc-ping.com/${{ secrets.healthcheck_id }}/fail
+        run: curl --max-time 10 --retry 5 -f -sS -L https://hc-ping.com/${{ secrets.healthcheck_id }}/fail
         if: ${{ failure() }}
