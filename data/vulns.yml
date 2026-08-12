@@ -89,3 +89,8 @@
   title: AWS Ops Wheel
   url: https://aws.amazon.com/security/security-bulletins/rss/2026-018-aws/
   description: Et tu, AWS? TIL that AWS has their own version of <a href="https://wheeldecide.com">Wheel Decide</a>, Ops Wheel. Like Wheel Decide, Ops Wheel lets you spin a wheel to pick where to go for lunch. Unlike Wheel Decide, Ops Wheel — via not checking JWT signatures — <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-018-aws/">allowed attackers to get administrator access to the application, delete <i>all application data across tenants</i>, and <b>manage Cognito user accounts?!</b></a> Christ. I think I might retire and go live on a boat.
+
+- date: 2026-08-11
+  title: SharePoint
+  url: https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/
+  description: An attacker could <a href="https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/">impersonate any user in Microsoft Sharepoint</a> due to the validation only of a signed inner JWT wrapped in an outer JWT that could be alg:none and, hang on, isn't this the <em>exact same thing</em> as the Entra ID one?
