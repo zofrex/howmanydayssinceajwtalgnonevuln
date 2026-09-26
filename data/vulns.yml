@@ -94,3 +94,8 @@
   title: SharePoint
   url: https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/
   description: An attacker could <a href="https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/">impersonate any user in Microsoft Sharepoint</a> due to the validation only of a signed inner JWT wrapped in an outer JWT that could be alg:none and, hang on, isn't this the <em>exact same thing</em> as the Entra ID one?
+
+- date: 2026-09-25
+  title: Microsoft Titan
+  url: https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records
+  description: Microsoft's "internal" analytics platform, Titan, <a href="https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records">exposed a database query API over the public internet to anyone who presented it with a JWT, no signature required</a>. It's not even been two months since the last one, Microsoft. What are we doing here? What's going on?
