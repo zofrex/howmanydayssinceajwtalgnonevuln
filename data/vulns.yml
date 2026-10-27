@@ -104,3 +104,8 @@
   title: Microsoft Titan
   url: https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records
   description: Microsoft's "internal" analytics platform, Titan, <a href="https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records">exposed a database query API over the public internet to anyone who presented it with a JWT, no signature required</a>. It's not even been two months since the last one, Microsoft. What are we doing here? What's going on?
+
+- date: 2026-09-28
+  title: authlib
+  url: https://uziii2208.github.io/post/cve-2026-96760/
+  description: authlib, a Python library for OAuth and OpenID Connect, among a swathe of recently reported bugs, <a href="https://uziii2208.github.io/post/cve-2026-96760/">skipped validation of JWTs if no signatures were provided at all</a>.
