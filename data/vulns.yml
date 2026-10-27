@@ -85,6 +85,11 @@
   url: https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key
   description: The pac4j authentication framework would accept unsigned session tokens for admins & superusers, as long as they were <a href="https://www.codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key">encrypted with the <i>public</i> RSA key</a>.
 
+- date: 2026-03-04
+  title: authlib
+  url: https://github.com/authlib/authlib/security/advisories/GHSA-7wc2-qxgw-g8gg
+  added_retroactively: yes
+
 - date: 2026-04-24
   title: AWS Ops Wheel
   url: https://aws.amazon.com/security/security-bulletins/rss/2026-018-aws/
